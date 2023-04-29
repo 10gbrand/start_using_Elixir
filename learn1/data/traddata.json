@@ -1,0 +1,38 @@
+{
+    "Id": "123654",
+    "Areal": 62.28,
+    "Easting": 440000,
+    "Northing": 6500000,
+    "TreeList": [
+        {
+            "Diameter": 9.640,
+            "TreeSpecies": "Björk",
+            "Height": 18.000,
+            "Id": "1"
+        },
+        {
+            "Diameter": 4.640,
+            "TreeSpecies": "Björk",
+            "Height": 18.123,
+            "Id": "2"
+        },
+        {
+            "Diameter": 2.640,
+            "TreeSpecies": "Björk",
+            "Height": 18.987,
+            "Id": "3"
+        },
+        {
+            "Diameter": 9.456,
+            "TreeSpecies": "Ek",
+            "Height": 15.123,
+            "Id": "4"
+        },
+        {
+            "Diameter": 9.123,
+            "TreeSpecies": "Ek",
+            "Height": 18.321,
+            "Id": "5"
+        }
+    ]
+}
