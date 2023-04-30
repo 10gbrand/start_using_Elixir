@@ -27,7 +27,8 @@ defmodule Traddata do
       id: traddata["Id"],
       areal: traddata["Areal"],
       easting: traddata["Easting"],
-      northing: traddata["Northing"]
+      northing: traddata["Northing"],
+      treeList: Trad.tradJson_to_struct(traddata)
     }
   end
 end
@@ -39,21 +40,3 @@ defmodule JsonFromFile do
 end
 
 # x = JsonFromFile.get_json("data/traddata.json")
-
-defmodule Testar do
-  def test1 do
-    data =
-      JsonFromFile.get_json("data/traddata.json")
-      |> elem(1)
-      |> Traddata.traddataJson_to_struct()
-
-    data
-  end
-
-  def test2 do
-    data =
-      JsonFromFile.get_json("data/traddata.json")
-      |> elem(1)
-      |> Trad.tradJson_to_struct()
-  end
-end
