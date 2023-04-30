@@ -20,7 +20,7 @@ defmodule Trad do
 end
 
 defmodule Traddata do
-  defstruct [:id, :areal, :easting, :northing, :treeList]
+  defstruct [:id, :areal, :easting, :northing, :treeList, :totNr]
 
   def traddataJson_to_struct(traddata) do
     %Traddata{
@@ -29,6 +29,8 @@ defmodule Traddata do
       easting: traddata["Easting"],
       northing: traddata["Northing"],
       treeList: Trad.tradJson_to_struct(traddata)
+      # att göra: lägga till en summering at träden.
+      # totNr: Trad.tradJson_to_struct(traddata) |> |> Enum.sum()
     }
   end
 end
